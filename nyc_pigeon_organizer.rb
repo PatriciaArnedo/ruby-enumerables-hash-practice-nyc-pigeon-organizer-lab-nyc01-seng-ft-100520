@@ -12,11 +12,11 @@ def nyc_pigeon_organizer(data)
         if result_hash[name][attribute_type] == nil
         result_hash[name][attribute_type] = Array.new
         end
-        result_hash[name][attribute_type].push(attribute)
+        result_hash[name][attribute_type].push(attribute.to_s)
       end
     end
   end
-  puts result_hash
+  result_hash
 end
 
 nyc_pigeon_organizer(pigeon_data = {
