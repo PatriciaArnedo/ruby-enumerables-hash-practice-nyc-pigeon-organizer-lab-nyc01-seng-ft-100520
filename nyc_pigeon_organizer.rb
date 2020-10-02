@@ -15,13 +15,8 @@ def nyc_pigeon_organizer(data)
     end
     result_hash[name][attribute_type].push(attribute)
     
-    result_hash
   end
-  
-  
-
-  
-  
+  result_hash
 end
 
 nyc_pigeon_organizer(pigeon_data = {
