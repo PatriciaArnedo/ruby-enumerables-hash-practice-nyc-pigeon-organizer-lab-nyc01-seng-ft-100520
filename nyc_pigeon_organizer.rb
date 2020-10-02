@@ -2,12 +2,12 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   
   array = nil
-  result_hash = hash.new
+  result_hash = Hash.new
   data.each_pair do |attribute_type, hashes|
     hashes.each_pair do |attribute, names|
       names.each do |name|
         if result_hash[name] == nil
-          result_hash[name] = hash.new
+          result_hash[name] = Hash.new
         end
       end
       if result_hash[name][attribute_type] == nil
