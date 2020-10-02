@@ -4,14 +4,15 @@ def nyc_pigeon_organizer(data)
   array = nil
   result_hash = hash.new
   data.each_pair do |attribute_type, hashes|
-    
     hashes.each_pair do |attribute, names|
       names.each do |name|
         if result_hash[name] == nil
           result_hash[name] = hash.new
+        end
       end
       if result_hash[name][attribute_type] == nil
         result_hash[name][attribute_type] = array.new
+      end
     end
     result_hash[name][attribute_type].push(attribute)
     
