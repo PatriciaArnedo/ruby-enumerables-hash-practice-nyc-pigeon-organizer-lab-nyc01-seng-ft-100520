@@ -2,8 +2,8 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   
   array = nil
-  data.each do |key, value|
-    value.each do |k2, v2|
+  data.each_pair do |key, value|
+    value.each_pair do |k2, v2|
       array << v2 
     end
   end
