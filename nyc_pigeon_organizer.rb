@@ -2,13 +2,14 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   
   array = nil
+  result_hash = hash.new
   data.each_pair do |attribute_type, hashes|
-    hashes.each_pair do |k2, names|
-      array << v2 
+    hashes.each_pair do |attribute, names|
+      array << names
     end
   end
   
-  array.uniq!
+
   
   
 end
