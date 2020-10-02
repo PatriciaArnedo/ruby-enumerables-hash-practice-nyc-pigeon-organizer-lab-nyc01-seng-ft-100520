@@ -13,8 +13,8 @@ def nyc_pigeon_organizer(data)
         result_hash[name][attribute_type] = array.new
       end
     result_hash[name][attribute_type].push(attribute)
+   end
   end
-end
   result_hash
 end
 
